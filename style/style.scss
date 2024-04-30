@@ -1,0 +1,99 @@
+$bgcolor: gainsboro;
+$textcolor: #1d4150;
+$fontsize: 18px;
+
+/* Use the variables */
+body {
+  background-color: gainsboro;
+  background-image: linear-gradient(gray, white);
+  color: $textcolor;
+  font-size: $fontsize;
+  margin: 10px;
+}
+.myCV{
+  width: 80%;
+  height: 1400px;
+  border: 1px solid $textcolor;
+  border-radius: 15px;
+  margin: auto;
+  padding: 5px;
+  background-color: white;
+}
+.header{
+  /*border: 1px solid green;*/
+  height: 5%;
+  padding: 5px;
+  margin: 5px;
+}
+.navbarFixedToTop{
+  display: flex;
+  justify-content: space-between;
+}
+.navBar{
+  background-color: transparent;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: $textcolor;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: x-large;
+}
+li a:hover {
+  background-color: $bgcolor;
+}
+.navbarLogo{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 5ch;
+  color: $textcolor;
+  text-decoration: underline 2px $bgcolor;
+  text-underline-offset: 6px;
+}
+
+
+.home{
+  border: 1px solid red;
+  height: 10%;
+  padding: 5px;
+  margin: 5px;
+}
+.services{
+  border: 1px solid red;
+  height: 20%;
+  padding: 5px;
+  margin: 5px;
+}
+.about{
+  border: 1px solid red;
+  height: 30%;
+  padding: 5px;
+  margin: 5px;
+}
+.gallery{
+  border: 1px solid red;
+  height: 20%;
+  padding: 5px;
+  margin: 5px;
+}
+.contactMe{
+  border: 1px solid red;
+  height: 15%;
+  padding: 5px;
+  margin: 5px;
+}
+
