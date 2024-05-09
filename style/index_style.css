@@ -1,22 +1,20 @@
 /* Use the variables */
 body {
-  background-color: gainsboro;
   background-image: linear-gradient(gray, white);
   color: #1d4150;
-  font-size: 18px;
-  margin: 10px; }
+  font-size: 3ch;
+  margin: 40px; }
 
 .myCV {
   width: 80%;
-  height: 1400px;
+  height: 1600px;
   border: 1px solid #1d4150;
-  border-radius: 15px;
   margin: auto;
-  padding: 5px;
-  background-color: white; }
+  padding: 25px;
+  background-color: white;
+  box-shadow: 15px -10px 5px rgba(220, 220, 220, 0.6); }
 
 .header {
-  /*border: 1px solid green;*/
   height: 5%;
   padding: 5px;
   margin: 5px; }
@@ -43,10 +41,11 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: x-large; }
+  text-transform: uppercase; }
 
 li a:hover {
-  background-color: gainsboro; }
+  background-color: rgba(220, 220, 220, 0.6);
+  border-radius: 10px; }
 
 .navbarLogo {
   font-family: "Playfair Display", serif;
@@ -55,36 +54,68 @@ li a:hover {
   font-style: normal;
   font-size: 5ch;
   color: #1d4150;
-  text-decoration: underline 2px gainsboro;
+  text-decoration: underline 2px rgba(220, 220, 220, 0.6);
   text-underline-offset: 6px; }
 
-.home {
-  border: 1px solid red;
-  height: 10%;
+.presentation {
+  background-image: linear-gradient(to left, white, #bcc0bf);
   padding: 5px;
-  margin: 5px; }
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+
+.myPhoto {
+  grid-row: 1 / 3;
+  background-image: url("../media/my-profile-photo.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.myQuote {
+  line-height: 2.5ch; }
+
+.myName {
+  color: red; }
 
 .services {
-  border: 1px solid red;
-  height: 20%;
   padding: 5px;
-  margin: 5px; }
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center; }
+
+.titleAboutMySkills {
+  grid-column: 1 / 3; }
+
+.aboutMySkills {
+  grid-column: 1 / 3; }
 
 .about {
-  border: 1px solid red;
-  height: 30%;
+  background-image: linear-gradient(to right, white, rgba(220, 220, 220, 0.6), #bcc0bf);
   padding: 5px;
-  margin: 5px; }
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr); }
+
+.titleAboutMe {
+  grid-row: 1 / 2;
+  text-align: center; }
+
+.photoWithMe {
+  grid-row: 1 / 6;
+  background-image: url("../media/photoWithMe.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .gallery {
-  border: 1px solid red;
-  height: 20%;
+  border: 1px solid rgba(236, 140, 31, 0.8);
   padding: 5px;
   margin: 5px; }
 
 .contactMe {
   border: 1px solid red;
-  height: 15%;
   padding: 5px;
   margin: 5px; }
 
