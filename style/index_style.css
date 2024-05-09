@@ -7,7 +7,7 @@ body {
 
 .myCV {
   width: 80%;
-  height: 1600px;
+  height: 2000px;
   border: 1px solid #1d4150;
   margin: auto;
   padding: 25px;
@@ -115,8 +115,17 @@ li a:hover {
   margin: 5px; }
 
 .contactMe {
-  border: 1px solid red;
+  border: 1px solid black;
+  height: 20%;
   padding: 5px;
-  margin: 5px; }
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-image: linear-gradient(to left, white, #bcc0bf, #1d4150); }
+
+.photoForContact {
+  background-image: url("../media/MyPhotoForContact.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=index_style.css.map */
