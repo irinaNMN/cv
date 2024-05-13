@@ -115,9 +115,9 @@ li a:hover {
   padding: 5px;
   margin: 5px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto 25%;
   grid-rows: auto, auto, auto, auto;
-  gap: 25px; }
+  gap: 35px; }
 
 .titleAboutMe {
   grid-row: 1 / 2;
@@ -141,16 +141,21 @@ li a:hover {
   padding-inline: 50px; }
 
 .buttonDownloadCV {
-  text-align: right; }
+  text-align: center; }
 
 .button {
   background-color: #1d4150;
   color: white;
-  padding: 15px 35px;
+  padding: 15px 25px;
   text-align: center;
-  font-size: 3ch;
+  font-size: 2.5ch;
   margin: 4px 2px;
   cursor: pointer; }
+
+.skillsAndEducation {
+  border: 1px solid red;
+  padding: 5px;
+  margin: 5px; }
 
 .gallery {
   border: 1px solid rgba(236, 140, 31, 0.8);
