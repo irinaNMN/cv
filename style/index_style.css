@@ -135,10 +135,22 @@ li a:hover {
   line-height: 2.5ch; }
 
 .informationAboutMe {
-  display: flex; }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding-inline: 50px; }
 
 .buttonDownloadCV {
   text-align: right; }
+
+.button {
+  background-color: #1d4150;
+  color: white;
+  padding: 15px 35px;
+  text-align: center;
+  font-size: 3ch;
+  margin: 4px 2px;
+  cursor: pointer; }
 
 .gallery {
   border: 1px solid rgba(236, 140, 31, 0.8);

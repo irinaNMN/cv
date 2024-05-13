@@ -121,9 +121,11 @@ li a:hover {
   grid-column: 1 / 3;
   line-height: 3ch;
 }
-.commentAboutMySkills{
+
+.commentAboutMySkills {
   line-height: 3ch;
 }
+
 .imageForWebDesign {
   background-image: url("../media/image-for-webdesign.png");
   background-size: contain;
@@ -162,17 +164,33 @@ li a:hover {
   background-repeat: no-repeat;
   background-position: center;
 }
-.myDescription{
+
+.myDescription {
   text-indent: 50px;
   line-height: 2.5ch;
 }
-.informationAboutMe{
-  display: flex;
 
+.informationAboutMe {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding-inline: 50px;
 }
-.buttonDownloadCV{
+
+.buttonDownloadCV {
   text-align: right;
 }
+
+.button {
+  background-color: $textcolor;
+  color: white;
+  padding: 15px 35px;
+  text-align: center;
+  font-size: 3ch;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 .gallery {
   border: 1px solid rgba(236, 140, 31, 0.8);
   padding: 5px;
