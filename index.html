@@ -8,24 +8,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Jersey+20+Charted&display=swap" rel="stylesheet">
     <title>Irina Portofolio | CV</title>
     <link rel="stylesheet" href="style/index_style.css">
+    <script src="js/fileWithJS.js"></script>
 </head>
 <body>
 <div class="myCV">
-    <div class="header">
+    <div class="header" id="header">
         <div class="navbarFixedToTop">
-            <a class="navbarLogo" href="#">IrinaPlesca</a>
+            <a class="navbarLogo" href="#header">IrinaPlesca</a>
             <nav class="navBar">
-                <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">galerry</a></li>
-                    <li><a href="#">contact me!</a></li>
+                <ul class="ulNavBar">
+                    <li class="liNavBar"><a href="#home">home</a></li>
+                    <li class="liNavBar"><a href="#myServices">services</a></li>
+                    <li class="liNavBar"><a href="#about">about</a></li>
+                    <li class="liNavBar"><a href="#skillsAndEducation">Skills and Education</a></li>
+                    <li class="liNavBar"><a href="#contactMe">contact me!</a></li>
                 </ul>
             </nav>
         </div>
     </div>
-    <div class="presentation">
+    <div class="presentation" id="home">
         <div class="myPhoto">
 
         </div>
@@ -36,7 +37,7 @@
             <i>Passionate about IT with a hunger for learning and adapting to new challenges! </i>
         </div>
     </div>
-    <div class="services">
+    <div class="services" id="myServices">
         <div class="titleAboutMySkills"><h2> What I do the best:</h2></div>
         <div class="aboutMySkills">Passionate about crafting stunning web designs and mastering front-end development,
             eager to bring fresh creativity and dedication to every project as a novice enthusiast:
@@ -57,7 +58,7 @@
             </p>
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <div class="titleAboutMe"><h2>A little about me</h2></div>
         <div class="photoWithMe"></div>
         <div class="myDescription">
@@ -70,8 +71,8 @@
             <ul>
                 <li>2024 FRONT END DEVELOPMENT (18 march - 30 june)
                     <ul>
-                        <li></li>
-                        <li></li>
+                        <li>Ability to troubleshoot and debug issues effectively</li>
+                        <li>High attention to detail</li>
                     </ul>
                 </li>
                 <li>2023 SMM COURSE (05 may - 31 july)
@@ -103,21 +104,64 @@
             <div>Entry-level</div>
         </div>
         <div class="buttonDownloadCV">
-            <button class="button">Download CV</button>
+            <a class="button" download href="media/cvPlesca_Irina.pdf">Download CV</a>
         </div>
     </div>
     <div class="skillsAndEducation">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id="skillsAndEducation">
+            <h1>Skills and Education</h1>
+            <p><b>Pedagogy for Primary Education and Informatics</b>, UPS "Ion Creanga", Chisinau 2010-2014</p>
+            <p><b>Improvement courses</b>, 3 months, Academia "Stefan cel mare" 2015 </p>
+            <p><b>The course on SMM (Social Media Marketing)</b>, 3 months, Tekwill 2023</p>
+            <p><b>The course on front-end development</b>, 3 months, Tekwill 2024 </p>
+        </div>
+        <div>
+            <h3>Languages:</h3>
+            <p>Romanian: Native</p>
+            <p>Russian: Proficient</p>
+            <p>English: Intermediate</p>
+            <h3>Programming Languages:</h3> <!--<span>HTML5, CSS3, JavaScript</span>-->
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>JavaScript</p>
+        </div>
     </div>
-    <div class="gallery">
-
+    <div class="hobby">
+        <h1>My hobbies:</h1>
+        <div>
+            <img class="hobbyImg" src="media/camera.png" alt="bookImg">
+            <p>Photography</p>
+        </div>
+        <div>
+            <img class="hobbyImg" src="media/reading-book.png" alt="bookImg">
+            <p>Reading</p>
+        </div>
+        <div>
+            <img class="hobbyImg" src="media/design-thinking.png" alt="designImg">
+            <p>Design</p>
+        </div>
+        <div>
+            <img class="hobbyImg" src="media/fitness.png" alt="fitnessImg">
+            <p>Fitness</p>
+        </div>
     </div>
-    <div class="contactMe">
+    <div class="contactMe" id="contactMe">
         <div class="photoForContact"></div>
-        <div class="myContacts"></div>
+        <div class="myContacts">
+            <h2>My contacts:</h2>
+            <div>Phone:</div>
+            <div>+37379385309</div>
+            <div>E-mail:</div>
+            <div>irina.cretu2112@gmail.com</div>
+            <div>LinkedIn profile:</div>
+            <div>http://bitly.ws/Q4aJ</div>
+            <div> Current time:
+                <span id="clock"></span>
+            </div>
+            <div class="like">
+                <input type="button">
+            </div>
+        </div>
     </div>
 </div>
 </body>

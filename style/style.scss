@@ -15,16 +15,15 @@ body {
 
 .myCV {
   width: 80%;
-  height: 2500px;
-  border: 1px solid $textcolor;
+  height: 100%;
   margin: auto;
-  padding: 25px;
+  padding: 15px;
   background-color: white;
   box-shadow: 15px -10px 5px $bgcolor;
 }
 
 .header {
-  height: 5%;
+  height: 10%;
   padding: 5px;
   margin: 5px;
 }
@@ -38,18 +37,18 @@ body {
   background-color: transparent;
 }
 
-ul {
+.ulNavBar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-li {
+.liNavBar {
   float: left;
 }
 
-li a {
+.liNavBar a {
   display: block;
   color: $textcolor;
   text-align: center;
@@ -58,7 +57,7 @@ li a {
   text-transform: uppercase;
 }
 
-li a:hover {
+.liNavBar a:hover {
   background-color: $bgcolor;
   border-radius: 10px;
 }
@@ -74,7 +73,6 @@ li a:hover {
   text-underline-offset: 6px;
 }
 
-
 .presentation {
   background-image: linear-gradient(to left, white, $bgSecondcolor);
   padding: 5px;
@@ -89,11 +87,8 @@ li a:hover {
   background-image: url("../media/my-profile-photo.png");
   background-size: contain;
   background-repeat: no-repeat;
-
 }
 
-.aboutMe {
-}
 
 .myQuote {
   line-height: 2.5ch;
@@ -144,12 +139,12 @@ li a:hover {
 
 .about {
   background-image: linear-gradient(to right, white, $bgcolor, $bgSecondcolor);
-  padding: 5px;
+  padding: 35px;
   margin: 5px;
   display: grid;
   grid-template-columns: auto 25%;
   grid-rows: (auto, auto, auto, auto);
-  gap: 35px;
+  gap: 5px;
 }
 
 .titleAboutMe {
@@ -159,7 +154,7 @@ li a:hover {
 
 .photoWithMe {
   grid-row: 1 / span 3;
-  background-image: url("../media/photoWithMe.png");
+  //background-image: url("../media/photoWithMe.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -168,6 +163,7 @@ li a:hover {
 .myDescription {
   text-indent: 50px;
   line-height: 2.5ch;
+  font-style: oblique;
 }
 
 .informationAboutMe {
@@ -190,20 +186,19 @@ li a:hover {
   margin: 4px 2px;
   cursor: pointer;
 }
-.skillsAndEducation{
-  border: 1px solid red;
-  padding: 5px;
+
+.skillsAndEducation {
+  padding: 55px;
   margin: 5px;
-}
-.gallery {
-  border: 1px solid rgba(236, 140, 31, 0.8);
-  padding: 5px;
-  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  justify-items: center;
+  align-items: center;
 }
 
 .contactMe {
-  border: 1px solid black;
-  height: 20%;
+  height: 10%;
   padding: 5px;
   margin: 5px;
   display: grid;
@@ -215,5 +210,18 @@ li a:hover {
   background-image: url("../media/MyPhotoForContact.png");
   background-size: contain;
   background-repeat: no-repeat;
+}
 
+#clock {
+  color: red;
+}
+.hobby{
+  padding: 55px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.hobbyImg{
+  height: 50px;
 }

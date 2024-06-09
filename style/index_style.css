@@ -7,15 +7,14 @@ body {
 
 .myCV {
   width: 80%;
-  height: 2500px;
-  border: 1px solid #1d4150;
+  height: 100%;
   margin: auto;
-  padding: 25px;
+  padding: 15px;
   background-color: white;
   box-shadow: 15px -10px 5px rgba(220, 220, 220, 0.6); }
 
 .header {
-  height: 5%;
+  height: 10%;
   padding: 5px;
   margin: 5px; }
 
@@ -26,16 +25,16 @@ body {
 .navBar {
   background-color: transparent; }
 
-ul {
+.ulNavBar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden; }
 
-li {
+.liNavBar {
   float: left; }
 
-li a {
+.liNavBar a {
   display: block;
   color: #1d4150;
   text-align: center;
@@ -43,7 +42,7 @@ li a {
   text-decoration: none;
   text-transform: uppercase; }
 
-li a:hover {
+.liNavBar a:hover {
   background-color: rgba(220, 220, 220, 0.6);
   border-radius: 10px; }
 
@@ -112,12 +111,12 @@ li a:hover {
 
 .about {
   background-image: linear-gradient(to right, white, rgba(220, 220, 220, 0.6), #bcc0bf);
-  padding: 5px;
+  padding: 35px;
   margin: 5px;
   display: grid;
   grid-template-columns: auto 25%;
   grid-rows: auto, auto, auto, auto;
-  gap: 35px; }
+  gap: 5px; }
 
 .titleAboutMe {
   grid-row: 1 / 2;
@@ -125,14 +124,14 @@ li a:hover {
 
 .photoWithMe {
   grid-row: 1 / span 3;
-  background-image: url("../media/photoWithMe.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
 
 .myDescription {
   text-indent: 50px;
-  line-height: 2.5ch; }
+  line-height: 2.5ch;
+  font-style: oblique; }
 
 .informationAboutMe {
   display: grid;
@@ -153,18 +152,16 @@ li a:hover {
   cursor: pointer; }
 
 .skillsAndEducation {
-  border: 1px solid red;
-  padding: 5px;
-  margin: 5px; }
-
-.gallery {
-  border: 1px solid rgba(236, 140, 31, 0.8);
-  padding: 5px;
-  margin: 5px; }
+  padding: 55px;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  justify-items: center;
+  align-items: center; }
 
 .contactMe {
-  border: 1px solid black;
-  height: 20%;
+  height: 10%;
   padding: 5px;
   margin: 5px;
   display: grid;
@@ -175,5 +172,18 @@ li a:hover {
   background-image: url("../media/MyPhotoForContact.png");
   background-size: contain;
   background-repeat: no-repeat; }
+
+#clock {
+  color: red; }
+
+.hobby {
+  padding: 55px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; }
+
+.hobbyImg {
+  height: 50px; }
 
 /*# sourceMappingURL=index_style.css.map */
