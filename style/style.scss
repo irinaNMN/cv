@@ -1,0 +1,227 @@
+$bgcolor: rgba(220, 220, 220, 0.6);
+$bgSecondcolor: rgb(188, 192, 191);
+$textcolor: #1d4150;
+$fontsize: 3ch;
+$textImportantColor: red;
+
+
+/* Use the variables */
+body {
+  background-image: linear-gradient(gray, white);
+  color: $textcolor;
+  font-size: $fontsize;
+  margin: 40px;
+}
+
+.myCV {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 15px -10px 5px $bgcolor;
+}
+
+.header {
+  height: 10%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.navbarFixedToTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar {
+  background-color: transparent;
+}
+
+.ulNavBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.liNavBar {
+  float: left;
+}
+
+.liNavBar a {
+  display: block;
+  color: $textcolor;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.liNavBar a:hover {
+  background-color: $bgcolor;
+  border-radius: 10px;
+}
+
+.navbarLogo {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 5ch;
+  color: $textcolor;
+  text-decoration: underline 2px $bgcolor;
+  text-underline-offset: 6px;
+}
+
+.presentation {
+  background-image: linear-gradient(to left, white, $bgSecondcolor);
+  padding: 5px;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.myPhoto {
+  grid-row: 1 / 3;
+  background-image: url("../media/my-profile-photo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.myQuote {
+  line-height: 2.5ch;
+}
+
+.myName {
+  color: $textImportantColor;
+}
+
+.services {
+  margin: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  text-align: center;
+  gap: 35px;
+}
+
+.titleAboutMySkills {
+  grid-column: 1 / 3;
+  color: $textImportantColor;
+}
+
+.aboutMySkills {
+  grid-column: 1 / 3;
+  line-height: 3ch;
+}
+
+.commentAboutMySkills {
+  line-height: 3ch;
+}
+
+.imageForWebDesign {
+  background-image: url("../media/image-for-webdesign.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+}
+
+.imageFrontEndDevelop {
+  background-image: url("../media/image-frontend-develop.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+}
+
+.about {
+  background-image: linear-gradient(to right, white, $bgcolor, $bgSecondcolor);
+  padding: 35px;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: auto 25%;
+  grid-rows: (auto, auto, auto, auto);
+  gap: 5px;
+}
+
+.titleAboutMe {
+  grid-row: 1 / 2;
+  text-align: center;
+}
+
+.photoWithMe {
+  grid-row: 1 / span 3;
+  //background-image: url("../media/photoWithMe.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.myDescription {
+  text-indent: 50px;
+  line-height: 2.5ch;
+  font-style: oblique;
+}
+
+.informationAboutMe {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding-inline: 50px;
+}
+
+.buttonDownloadCV {
+  text-align: center;
+}
+
+.button {
+  background-color: $textcolor;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 2.5ch;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.skillsAndEducation {
+  padding: 55px;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.contactMe {
+  height: 10%;
+  padding: 5px;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-image: linear-gradient(to left, white, $bgSecondcolor, $textcolor);
+}
+
+.photoForContact {
+  background-image: url("../media/MyPhotoForContact.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#clock {
+  color: red;
+}
+.hobby{
+  padding: 55px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.hobbyImg{
+  height: 50px;
+}
