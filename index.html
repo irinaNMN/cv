@@ -154,12 +154,20 @@
             <div>E-mail:</div>
             <div>irina.cretu2112@gmail.com</div>
             <div>LinkedIn profile:</div>
-            <div>http://bitly.ws/Q4aJ</div>
+            <a href="https://www.linkedin.com/in/irina-ple%C8%99ca-29112a286/" target="_blank">
+                https://www.linkedin.com/in/irina-ple%C8%99ca-29112a286/</a>
             <div> Current time:
                 <span id="clock"></span>
             </div>
             <div class="like">
-                <input type="button">
+                <button type="button" id="likeBtn" onclick="addLike()">
+                    <img class="appreciationImg" src="media/like.png" alt="likeButton">
+                </button>
+                <span id="likeCount"></span>
+                <button type="button" id="unlikeBtn" onclick="addDisLike()">
+                    <img class="appreciationImg" src="media/unlike.png" alt="unlikeButton">
+                </button>
+                <span id="dislikeCount"></span>
             </div>
         </div>
     </div>

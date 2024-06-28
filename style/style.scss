@@ -22,6 +22,11 @@ body {
   box-shadow: 15px -10px 5px $bgcolor;
 }
 
+.appreciationImg {
+  height: 50px;
+  cursor: pointer;
+}
+
 .header {
   height: 10%;
   padding: 5px;
@@ -207,7 +212,7 @@ body {
 }
 
 .photoForContact {
-  background-image: url("../media/MyPhotoForContact.png");
+  background-image: url("../media/myContacts.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -215,13 +220,15 @@ body {
 #clock {
   color: red;
 }
-.hobby{
+
+.hobby {
   padding: 55px;
   margin: 5px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-.hobbyImg{
+
+.hobbyImg {
   height: 50px;
 }

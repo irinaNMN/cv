@@ -13,6 +13,10 @@ body {
   background-color: white;
   box-shadow: 15px -10px 5px rgba(220, 220, 220, 0.6); }
 
+.appreciationImg {
+  height: 50px;
+  cursor: pointer; }
+
 .header {
   height: 10%;
   padding: 5px;
@@ -169,7 +173,7 @@ body {
   background-image: linear-gradient(to left, white, #bcc0bf, #1d4150); }
 
 .photoForContact {
-  background-image: url("../media/MyPhotoForContact.png");
+  background-image: url("../media/myContacts.png");
   background-size: contain;
   background-repeat: no-repeat; }
 
